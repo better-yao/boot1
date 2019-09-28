@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+<p th:text="${session.userMessage}"></p>
+<h1 align="center" style="color: crimson">登陆成功</h1>
+
+<form action="/User/logout" method="post">
+    <input type="submit"  value="退出登录" />
+</form>
+</body>
+</html>
